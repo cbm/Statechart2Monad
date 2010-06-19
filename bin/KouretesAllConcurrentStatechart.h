@@ -1,5 +1,5 @@
-#ifndef MyActivitySChart_h_
-#define MyActivitySChart_h_ 1
+#ifndef KouretesAllConcurrentStatechart_h_
+#define KouretesAllConcurrentStatechart_h_ 1
 		
 #include "architecture/statechartEngine/Statechart.h"
 #include "architecture/statechartEngine/StartState.h"
@@ -12,13 +12,13 @@
 
 #include "architecture/statechartWrapper.h"
 
-class MyActivitySChartStatechart : public StatechartWrapper {
+class KouretesAllConcurrentStatechartStatechart : public StatechartWrapper {
 
 	public:
 	
-		MyActivitySChartStatechart (Narukom* com);
+		KouretesAllConcurrentStatechartStatechart (Narukom* com);
 		
-		~MyActivitySChartStatechart ();
+		~KouretesAllConcurrentStatechartStatechart ();
 		
 		void Start ();
 		
@@ -47,5 +47,5 @@ class MyActivitySChartStatechart : public StatechartWrapper {
 			
 };
 
-#endif // MyActivitySChart_h_
+#endif // KouretesAllConcurrentStatechart_h_
 	

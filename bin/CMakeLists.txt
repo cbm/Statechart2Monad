@@ -1,17 +1,17 @@
 
 message ( STATUS "" )
-message ( STATUS " _..::: Configuring MyActivitySChart :::.._ " )
+message ( STATUS " _..::: Configuring KouretesAllConcurrentStatechart :::.._ " )
 message ( STATUS "" )
 
-add_library ( MyActivitySChart ${LibBuildType}
-        MyActivitySChart.cpp )        
+add_library ( KouretesAllConcurrentStatechart ${LibBuildType}
+        KouretesAllConcurrentStatechart.cpp )        
 
-target_link_libraries ( MyActivitySChart statechartEngine narukom )
+target_link_libraries ( KouretesAllConcurrentStatechart statechartEngine narukom )
 
-install ( TARGETS MyActivitySChart
+install ( TARGETS KouretesAllConcurrentStatechart
 RUNTIME DESTINATION   bin
 LIBRARY DESTINATION   lib
 ARCHIVE DESTINATION   lib/static )
 
-set ( StatechartLibraries ${StatechartLibraries} MyActivitySChart PARENT_SCOPE )
+set ( StatechartLibraries ${StatechartLibraries} KouretesAllConcurrentStatechart PARENT_SCOPE )
 	

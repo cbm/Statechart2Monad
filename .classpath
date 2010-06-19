@@ -4,5 +4,8 @@
 	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/IAC_EMF"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/IAC_EMF.edit"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/IAC_EMF.editor"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

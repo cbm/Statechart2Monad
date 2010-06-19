@@ -4,6 +4,7 @@ Bundle-Name: Statechart2Monad
 Bundle-SymbolicName: Statechart2Monad; singleton:=true
 Bundle-Version: 1.0.0
 Require-Bundle: org.eclipse.xpand,
+ org.apache.commons.logging,
  org.eclipse.xtend,
  org.eclipse.xtend.typesystem.emf,
  org.eclipse.emf.mwe.utils;bundle-version="0.7.2",

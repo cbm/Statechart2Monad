@@ -5,9 +5,9 @@
 
 #include( ../../hal/robot/nao-1.6.0/bootstrap.cmake )
 
-set ( ActivityName MyActivity )
+set ( ActivityName Sensors )
 
-set ( ActivitySrcs  MyActivity.cpp )
+set ( ActivitySrcs  Sensors.cpp )
 
 include ( ../activTemplate.cmake )
 

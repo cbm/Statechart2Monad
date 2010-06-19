@@ -1,10 +1,10 @@
 
-#ifndef _MyActivity_h_
-#define _MyActivity_h_ 1
+#ifndef _Vision_h_
+#define _Vision_h_ 1
 
 #include "architecture/IActivity.h"
 			
-class MyActivity : public IActivity {
+class Vision : public IActivity {
 			
 public:
 	
@@ -16,5 +16,5 @@ public:
 	
 };
 
-#endif // _MyActivity_h_
+#endif // _Vision_h_
 	

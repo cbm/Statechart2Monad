@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <workflow> 
-	<property name="model" value="Statechart2Monad/src/MyActivitySChart.model" /> 
+	<property name="model" value="Statechart2Monad/src/KouretesAllConcurrent.model" /> 
 	<property name="src-gen" value="src-gen" /> 
 	
 	<!-- set up EMF for standalone execution --> 

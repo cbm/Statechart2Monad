@@ -31,11 +31,4 @@
 		<nature>org.eclipse.pde.PluginNature</nature>
 		<nature>org.eclipse.xtend.shared.ui.xtendXPandNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/IAC.ecore</name>
-			<type>1</type>
-			<location>/home/cbm-deb/workspace/IAC_EMF/metamodel/IAC.ecore</location>
-		</link>
-	</linkedResources>
 </projectDescription>
