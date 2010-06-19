@@ -1,0 +1,25 @@
+«IMPORT IAC»
+«EXTENSION statechart2Monad::NodeHelper»
+«EXTENSION statechart2Monad::TransExpr»
+
+«DEFINE Condition FOR IAC::Transition»
+	«IF HasCondition(TE)-»
+		«FILE TransitionName(name)+".h" transitions_outlet»
+#include "architecture/statechartEngine/ICondition.h"
+			
+class «ConditionName(name)» : public statechart_engine::ICondition {
+			
+public:
+
+	void UserInit () { }
+
+	bool Eval() {
+		/* «getConditionOfExpression(TE)» */
+		return false;
+    }
+};
+		«ENDFILE»
+	ICondition* «ConditionNameInst(name)» = new «ConditionName(name)»;
+	_conditions.push_back( «ConditionNameInst(name)» );
+	«ENDIF-»
+«ENDDEFINE»

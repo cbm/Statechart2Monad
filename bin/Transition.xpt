@@ -1,0 +1,27 @@
+«IMPORT IAC»
+«EXTENSION statechart2Monad::NodeHelper»
+«EXTENSION statechart2Monad::TransExpr»
+
+«DEFINE TransitionHeaders FOR IAC::Transition»
+	«IF HasEvent(TE) || HasCondition(TE) || HasAction(TE)»
+		«FILE "transitionHeaders.h"»
+#include "transitions/«TransitionName(name)+".h"»"
+		«ENDFILE»
+	«ENDIF»
+«ENDDEFINE»
+
+
+«DEFINE Transition FOR IAC::Transition»
+	«IF TE.compareTo("null")!=0-»		
+		«EXPAND src::Event::Event»
+		«EXPAND src::Condition::Condition»
+		«EXPAND src::Action::Action»
+	«ENDIF-»
+	_transitions.push_back( new TransitionSegment<«
+			IF source.type.compareTo("CONDITION")==0 -»ConditionConnector«ELSE-»State«ENDIF-»,«
+			IF target.type.compareTo("CONDITION")==0 -»ConditionConnector«ELSE-»State«ENDIF
+		-»>(«NodeNameInst(source.label)»,«NodeNameInst(target.label)-»
+ «IF HasEvent(TE)-»,«EventNameInst(name)-»«ENDIF-»
+ «IF HasCondition(TE)-»,«ConditionNameInst(name)-»«ENDIF-»
+ «IF HasAction(TE)-»,«ActionNameInst(name)-»«ENDIF-» ) ); //«name-» 
+«ENDDEFINE»

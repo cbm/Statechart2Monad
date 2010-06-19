@@ -1,0 +1,41 @@
+import IAC;
+
+String NodeNameInst( String str ) :
+   JAVA statechart2Monad.NodeHelper.NodeNameInst(java.lang.String);
+   
+String ParentNodeNameInst( String str ) :
+   JAVA statechart2Monad.NodeHelper.ParentNodeNameInst(java.lang.String);
+   
+String ActivityNameInst( String str ) :
+   JAVA statechart2Monad.NodeHelper.ActivityNameInst(java.lang.String);
+   
+String TransitionName( String str ) :
+   JAVA statechart2Monad.NodeHelper.TransitionName(java.lang.String);
+   
+String ActionName( String str ) :
+   JAVA statechart2Monad.NodeHelper.ActionName(java.lang.String);
+   
+String ActionNameInst( String str ) :
+   JAVA statechart2Monad.NodeHelper.ActionNameInst(java.lang.String);
+   
+String ConditionName( String str ) :
+   JAVA statechart2Monad.NodeHelper.ConditionName(java.lang.String);
+   
+String ConditionNameInst( String str ) :
+   JAVA statechart2Monad.NodeHelper.ConditionNameInst(java.lang.String);
+   
+String EventName( String str ) :
+   JAVA statechart2Monad.NodeHelper.EventName(java.lang.String);
+   
+String EventNameInst( String str ) :
+   JAVA statechart2Monad.NodeHelper.EventNameInst(java.lang.String);
+   
+String NameFilter( String str ) :
+   JAVA statechart2Monad.NodeHelper.NameFilter(java.lang.String);
+   
+String ClassName( String str ) :
+   JAVA statechart2Monad.NodeHelper.ClassName(java.lang.String);
+   
+Collection SortNodes( Collection c) :
+   JAVA statechart2Monad.NodeHelper.SortNodes(java.util.Collection);
+   

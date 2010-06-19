@@ -1,0 +1,19 @@
+import IAC;
+   
+boolean HasEvent( String str ) :
+   JAVA statechart2Monad.TransExpr.HasEvent(java.lang.String);
+   
+boolean HasCondition( String str ) :
+   JAVA statechart2Monad.TransExpr.HasCondition(java.lang.String);
+   
+boolean HasAction( String str ) :
+   JAVA statechart2Monad.TransExpr.HasAction(java.lang.String);
+   
+String getEventOfExpression( String str ) :
+   JAVA statechart2Monad.TransExpr.getEventOfExpression(java.lang.String);
+   
+String getConditionOfExpression( String str ) :
+   JAVA statechart2Monad.TransExpr.getConditionOfExpression(java.lang.String);
+   
+String getActionOfExpression( String str ) :
+   JAVA statechart2Monad.TransExpr.getActionOfExpression(java.lang.String);

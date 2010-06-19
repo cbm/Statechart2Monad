@@ -1,0 +1,25 @@
+«IMPORT IAC»
+«EXTENSION statechart2Monad::NodeHelper»
+«EXTENSION statechart2Monad::TransExpr»
+
+«DEFINE Action FOR IAC::Transition»
+	«IF HasAction(TE)-»
+		«FILE TransitionName(name)+".h" transitions_outlet»
+#include "architecture/statechartEngine/IAction.h"
+			
+class «ActionName(name)» : public statechart_engine::IAction {
+			
+public:
+
+	void UserInit () { }
+
+	int Execute() {
+		/* «getActionOfExpression(TE)» */
+		return 0;
+    }
+};
+		«ENDFILE»
+	IAction* «ActionNameInst(name)» = new «ActionName(name)»;
+	_actions.push_back( «ActionNameInst(name)» );
+	«ENDIF-»
+«ENDDEFINE»
